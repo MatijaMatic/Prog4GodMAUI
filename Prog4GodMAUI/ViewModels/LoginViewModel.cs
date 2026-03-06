@@ -16,6 +16,7 @@ namespace Prog4GodMAUI.ViewModels
         }
 
 
+
         [ObservableProperty]
         string username;
 
@@ -60,6 +61,11 @@ namespace Prog4GodMAUI.ViewModels
                     {
                         await Shell.Current.GoToAsync("//HomePage"); ;
                     }
+                }
+                else
+                {
+                    // inform user about failed login
+                    await Shell.Current.DisplayAlert("Login failed", "Invalid username or password.", "OK");
                 }
             }
             catch (Exception ex)

@@ -302,10 +302,10 @@
                         <Label
                         FontAttributes="Bold"
                         FontSize="17"
-                        Text="Master Thesis (Croatian)"
+                        Text="GitHub"
                         TextColor="Black">
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding OpenMasterThesisCommand}" />
+                                <TapGestureRecognizer Command="{Binding LinkedInCommand}" />
                             </Label.GestureRecognizers>
                         </Label>
                         <Image
@@ -313,12 +313,12 @@
                         Source="arrow_next_small.svg"
                         WidthRequest="24">
                             <Image.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding OpenMasterThesisCommand}" />
+                                <TapGestureRecognizer Command="{Binding LinkedInCommand}" />
                             </Image.GestureRecognizers>
                         </Image>
 
                         <FlexLayout.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding OpenMasterThesisCommand}" />
+                            <TapGestureRecognizer Command="{Binding LinkedInCommand}" />
                         </FlexLayout.GestureRecognizers>
                     </FlexLayout>
                 </StackLayout>

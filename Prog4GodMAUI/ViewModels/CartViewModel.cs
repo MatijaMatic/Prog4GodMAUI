@@ -16,11 +16,6 @@ namespace Prog4GodMAUI.ViewModels
 
         bool isFirstRun;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CartViewModel"/> class.
-        /// </summary>
-        /// <param name="cartService">An instance of the <see cref="CartService"/> class used for cart operations.</param>
-        /// <param name="authService">An instance of the <see cref="AuthService"/> class used for authentication operations.</param>
         public CartViewModel(CartService cartService, AuthService authService)
         {
             _cartService = cartService;
@@ -28,33 +23,14 @@ namespace Prog4GodMAUI.ViewModels
             isFirstRun = true;
         }
 
-        public CartViewModel() { }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CartViewModel"/> class.
-        /// </summary>
-
-        /// <summary>
-        /// Gets or sets a value indicating whether the user is logged in.
-        /// </summary>
         [ObservableProperty]
         public bool isUserLoggedIn;
 
-        /// <summary>
-        /// Gets or sets a value indicating whether the view model is busy with cart modification.
-        /// </summary>
         [ObservableProperty]
         private bool isBusyWithCartModification;
 
-        /// <summary>
-        /// Gets the cart items.
-        /// </summary>
         public ObservableCollection<CartItemDetail> CartItems { get; private set; } = new ObservableCollection<CartItemDetail>();
 
-        /// <summary>
-        /// Initializes the cart view model.
-        /// </summary>
-        /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         [RelayCommand]
         public async Task Init()
         {
@@ -111,20 +87,12 @@ namespace Prog4GodMAUI.ViewModels
             }
         }
 
-        /// <summary>
-        /// Navigates to the login page.
-        /// </summary>
-        /// <returns>A task that represents the asynchronous operation.</returns>
         [RelayCommand]
         public async Task GoToLoginPage()
         {
             await Shell.Current.GoToAsync("LoginPage");
         }
 
-        /// <summary>
-        /// Deletes the cart.
-        /// </summary>
-        /// <returns>A task that represents the asynchronous operation.</returns>
         [RelayCommand]
         public async Task DeleteCart()
         {
@@ -184,10 +152,6 @@ namespace Prog4GodMAUI.ViewModels
             }
         }
 
-        /// <summary>
-        /// Increases the quantity of the specified product in the cart.
-        /// </summary>
-        /// <param name="product">The product whose quantity to increase.</param>
         [RelayCommand]
         public void IncreaseProductQuantity(Product product)
         {
@@ -203,10 +167,6 @@ namespace Prog4GodMAUI.ViewModels
             }
         }
 
-        /// <summary>
-        /// Decreases the quantity of the specified product in the cart.
-        /// </summary>
-        /// <param name="product">The product whose quantity to decrease.</param>
         [RelayCommand]
         public void DecreaseProductQuantity(Product product)
         {

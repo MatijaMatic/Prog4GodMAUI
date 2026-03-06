@@ -4,9 +4,9 @@ namespace Prog4GodMAUI.Views;
 
 public partial class HomePage : ContentPage
 {
-	public HomePage(HomePageViewModel viewModel)
-	{
-		InitializeComponent();
-		BindingContext = viewModel;
-	}
+    public HomePage(HomePageViewModel vm)
+    {
+        InitializeComponent();
+        BindingContext = vm;
+    }
 }

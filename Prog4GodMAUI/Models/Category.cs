@@ -16,8 +16,16 @@ namespace Prog4GodMAUI.Models
                 {
                     return null;
                 }
-                string formattedName = Name.Replace(" ", "_").ToLower();
-                return formattedName + ".jpg";
+
+                var lower = Name.ToLower();
+                var builder = new System.Text.StringBuilder();
+                foreach (var ch in lower)
+                {
+                    if (char.IsLetterOrDigit(ch)) builder.Append(ch);
+                    else if (char.IsWhiteSpace(ch)) builder.Append('_');
+                }
+
+                return builder.ToString() + ".jpg";
             }
         }
     }

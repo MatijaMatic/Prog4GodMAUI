@@ -18,6 +18,8 @@ namespace Prog4GodMAUI.ViewModels
             _authService = authService;
         }
 
+        
+
 
         [ObservableProperty]
         public bool isUserLoggedIn;
@@ -98,7 +100,7 @@ namespace Prog4GodMAUI.ViewModels
         [RelayCommand]
         private static async Task LinkedIn()
         {
-            await Browser.OpenAsync("www.linkedin.com/in/matija-matić-35425b344/?skipRedirect=true");
+            await Browser.OpenAsync("https://github.com/MatijaMatic");
         }
     
         [RelayCommand]

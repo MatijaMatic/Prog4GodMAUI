@@ -20,6 +20,6 @@ namespace Prog4GodMAUI.Models
         public List<CartProduct> Products { get; set; }//?
 
         [JsonPropertyName("__v")]
-        public int Version { get; set; }//ne znam sto je ovo
+        public int Version { get; set; }//?
     }
 }

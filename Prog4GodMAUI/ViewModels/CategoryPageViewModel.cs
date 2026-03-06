@@ -2,11 +2,8 @@
 using CommunityToolkit.Mvvm.Input;
 using Prog4GodMAUI.Models;
 using Prog4GodMAUI.Services;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Text;
 
 namespace Prog4GodMAUI.ViewModels
 {

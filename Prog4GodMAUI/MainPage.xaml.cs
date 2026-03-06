@@ -13,12 +13,11 @@ namespace Prog4GodMAUI
         {
             InitializeComponent();
 
-            //_productService = MauiProgram.CreateMauiApp().Services.GetService<ProductService>();
-            //_categoryService = MauiProgram.CreateMauiApp().Services.GetService<CategoryService>();
-            //_cartService = MauiProgram.CreateMauiApp().Services.GetService<CartService>();
-            //_userService = MauiProgram.CreateMauiApp().Services.GetService<UserService>();
+            _productService = MauiProgram.CreateMauiApp().Services.GetService<ProductService>();
+            _categoryService = MauiProgram.CreateMauiApp().Services.GetService<CategoryService>();
+            _cartService = MauiProgram.CreateMauiApp().Services.GetService<CartService>();
+            _userService = MauiProgram.CreateMauiApp().Services.GetService<UserService>();
 
-            // Store the original button color
             _originalButtonColor = GetProductsBtn.BackgroundColor;
         }
 

@@ -1,4 +1,5 @@
 ﻿using Prog4GodMAUI.Views;
+using System;
 
 namespace Prog4GodMAUI
 {
@@ -9,5 +10,11 @@ namespace Prog4GodMAUI
             InitializeComponent();
             MainPage = appShell;
         }
+
+        //public App()
+        //{
+        //    InitializeComponent();
+        //    MainPage = new MainPage();
+        //}
     }
 }

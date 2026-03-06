@@ -13,14 +13,8 @@ namespace Prog4GodMAUI.ViewModels
         private readonly CategoryService _categoryService;
         private readonly RecentlyViewedProductService _recentlyViewedProductsService;
 
-        /// <summary>
-        /// Gets the products.
-        /// </summary>
         public ObservableCollection<Product> Products { get; } = new ObservableCollection<Product>();
 
-        /// <summary>
-        /// Gets the categories.
-        /// </summary>
         public ObservableCollection<Category> Categories { get; } = new ObservableCollection<Category>();
 
         private bool isFirstRun;

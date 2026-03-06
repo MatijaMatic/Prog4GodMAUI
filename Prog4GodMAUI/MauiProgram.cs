@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
 using Prog4GodMAUI.Views;
 
 using Prog4GodMAUI.Services;
@@ -23,7 +24,6 @@ namespace Prog4GodMAUI
 
             builder.Services.AddSingleton<AppShell>();
 
-            //services
             builder.Services.AddSingleton<BaseService>();
             builder.Services.AddSingleton<ProductService>();
             builder.Services.AddSingleton<CategoryService>();
@@ -55,6 +55,8 @@ namespace Prog4GodMAUI
             builder.Logging.AddDebug();
 #endif
 
+            //var app = builder.Build();
+            //return app;
             return builder.Build();
         }
     }

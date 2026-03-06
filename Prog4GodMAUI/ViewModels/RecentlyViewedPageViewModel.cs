@@ -1,6 +1,4 @@
-﻿
-
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Prog4GodMAUI.Services;
 using Prog4GodMAUI.Models;
@@ -18,7 +16,7 @@ namespace Prog4GodMAUI.ViewModels
             RecentlyViewedProductService = recentlyViewedProductService;
         }
 
-        public RecentlyViewedPageViewModel() { }
+        
 
 
         [RelayCommand]
